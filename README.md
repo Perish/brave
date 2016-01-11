@@ -25,3 +25,15 @@ just do it
     *zoom: 1;
   }
 ```
+
+### !important 优先级最高
+
+```css
+  .textClass {
+    color: red !important;
+  }
+  .textClass {
+    color: blue;
+  }
+```
+上述中在textClass这个类包裹的文字颜色会是red
