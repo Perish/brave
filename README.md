@@ -37,3 +37,22 @@ just do it
   }
 ```
 上述中在textClass这个类包裹的文字颜色会是red
+
+### transition 过渡效果
+
+```css
+  transition: [transition-property:属性] [transition-duration:变化时间] [transtion-time-function:时间函数] [transition-delay:延迟时间]
+  
+  div {
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+    background-color: red;
+  }
+  
+  div:hover {
+    background-color: green;
+  }
+```
+
