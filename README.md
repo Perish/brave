@@ -18,7 +18,9 @@ just do it
 ```css
   .clearfix:before, .clearfix:after {
     content: " ";
-    display: block; //是个块级元素
+    display: table;
+  }
+  .clearfix:after {
     clear: both;
   }
   .clearfix {
