@@ -1,0 +1,44 @@
+/* Box-sizing border-box */
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Some default styles to make each box visible */
+
+.box {
+	color: white;
+	font-size: 100px;
+	text-align: center;
+	text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+/* Colors for each box */
+
+.box1 { background-color: #1abc9c; }
+.box2 { background-color: #3498db; }
+.box3 { background-color: #9b59b6; }
+.box4 { background-color: #34495e; }
+.box5 { background-color: #f1c40f; }
+.box6 { background-color: #e67e22; }
+.box7 { background-color: #e74c3c; }
+.box8 { background-color: #bdc3c7; }
+.box9 { background-color: #2ecc71; }
+.box10 { background-color: #16a085; }
+.white { background-color: white; }
+
+/* We start writing out flexbox here. The above is just page setup. */
+
+.container {
+	/*display: flex;  会让这个div占据一整行, 内部元素也都一行排列, 只会包裹窗口显示的宽度 */
+	/*display: inline-flex; 只会包住内部元素不一定是一整行, 内部元素也都一行排列*/
+	display: flex;
+	border: 10px solid goldenrod;
+	height: 100vh; /* 整个窗口高度 */
+	flex-direction: row;/* default row or [column row-reverse column-reverse] */
+	flex-wrap: wrap;  /* [wrap wrap-reverse nowrap ] */ 
+}
+
+.box {
+	width: calc(33.33333333% -  20px);
+	margin: 10px;
+}
