@@ -1,0 +1,23 @@
+.container {
+	display: flex;
+}
+
+.box {
+	flex: 1;
+}
+
+.box3 {
+	order: 3; /* 排序 */
+}
+
+.box7 {
+	order: 2;
+}
+
+.box5 {
+	order: -1;
+}
+
+.box6 {
+	order: -2;
+}

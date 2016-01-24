@@ -1,0 +1,49 @@
+.box {
+	font-size: 60px;
+}
+.container {
+	display: flex;
+	justify-content: flex-start; /* 这个div在什么位置显示，flex-start是开始位置(默认)，flex-end是结束位置, center是中间位置, space-between元素之间等距排列 */
+	border: 10px solid mistyrose;
+}
+.container1 {
+	display: flex;
+	justify-content: flex-end;
+	border: 10px solid mistyrose;
+}
+.container2 {
+	display: flex;
+	justify-content: center;
+	border: 10px solid mistyrose;
+}
+.container3 {
+	display: flex;
+	justify-content: space-between;
+	border: 10px solid mistyrose;
+}
+.container4 {
+	display: flex;
+	justify-content: space-around; /* space-around 不会紧贴左右边界 */
+	border: 10px solid mistyrose;
+}
+
+.container5 {
+	display: flex;
+	justify-content: space-between;
+	border: 10px solid mistyrose;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+
+.container6 {
+	display: flex;
+	justify-content: space-around;
+	border: 10px solid mistyrose;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+h1 {
+	padding: 0 10px;
+}
