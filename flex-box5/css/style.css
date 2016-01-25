@@ -1,0 +1,45 @@
+.container {
+	display: flex;
+	border: 10px solid mistyrose;
+	height: 100vh;
+	justify-content: space-between;
+}
+.container1 {
+	display: flex;
+	border: 10px solid mistyrose;
+	height: 100vh;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+.container2 {
+	display: flex;
+	border: 10px solid mistyrose;
+	height: 100vh;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+.container3 {
+	display: flex;
+	border: 10px solid mistyrose;
+	height: 100vh;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+
+.container1 .box {
+	width: 33.33333%;
+}
+.container2 .box {
+	width: 33.33333%;
+}
+.container3 .box {
+	width: 33.33333%;
+}
+
+
+
+
+h1 {
+	padding: 0 10px;
+}
