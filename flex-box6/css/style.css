@@ -1,0 +1,32 @@
+/* Box-sizing border-box */
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/* We start writing out flexbox here. The above is just page setup. */
+
+.container {
+	/*display: flex;  会让这个div占据一整行, 内部元素也都一行排列, 只会包裹窗口显示的宽度 */
+	/*display: inline-flex; 只会包住内部元素不一定是一整行, 内部元素也都一行排列*/
+	display: flex;
+	border: 10px solid goldenrod;
+	height: 100vh; /* 整个窗口高度 */
+	align-items: flex-start;
+}
+
+.box {
+	width: 33.33333%;
+}
+
+.box2 {
+	padding-bottom: 200px;
+}
+
+.box6 {
+	padding-bottom: 0;
+}
+
+.box9 {
+	padding-bottom: 50px;
+	align-self: flex-end; /* stretch baseline center */
+}
