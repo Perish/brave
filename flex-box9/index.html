@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>How Flexbox's flex-basis and wrapping work together</title>
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="box box1">one ooo</div>
+		<div class="box box2">two ttt</div>
+		<div class="box box3">three tre</div>
+		<div class="box box4">four fff</div>
+		<div class="box box5">five fi</div>
+		<div class="box box6">six six</div>
+	</div>
+	<h1>code:</h1>
+	<p>
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+
+	.container .box {
+		font-size: 30px;
+		flex-basis: 500px;
+		flex-grow: 1;
+	}
+
+	.container .box3 {
+		flex-grow: 20;
+	}
+	</p>
+
+
+	<div class="container1">
+		<div class="box box1">one ooo</div>
+		<div class="box box2">two ttt</div>
+		<div class="box box3">three tre</div>
+		<div class="box box4">four fff</div>
+		<div class="box box5">five fi</div>
+		<div class="box box6">six six</div>
+	</div>
+
+	<h1>code:</h1>
+	<p>
+		container1 {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			min-height: 100vh;
+		}
+
+		.container1 .box {
+			font-size: 30px;
+			flex-basis: 500px;
+			flex-grow: 1;
+		}
+
+		.container1 .box3 {
+			flex-grow: 20;
+		}
+	</p>
+
+
+
+	<div class="container2">
+		<div class="box box1">one ooo</div>
+		<div class="box box2">two ttt</div>
+		<div class="box box3">three tre</div>
+		<div class="box box4">four fff</div>
+		<div class="box box5">five fi</div>
+		<div class="box box6">six six</div>
+	</div>
+	<h1>code:</h1>
+	<p>
+		.container2 {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			height: 100vh;
+		}
+
+		.container2 .box {
+			font-size: 30px;
+			flex-basis: 250px;
+			flex-grow: 1;
+		}
+
+		.container2 .box3 {
+			flex-grow: 5;
+		}
+	</p>
+
+</body>
+</html>
