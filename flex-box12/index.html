@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Pure Flexbox navigation code along</title>
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="build/style.css">
+</head>
+<body>
+	<div class="wrapper">
+
+		<header class="top">
+			<h1><a href="#">What the Flexbox?!</a></h1>
+		</header>
+	
+		<nav class="flex-nav">
+			<a href="#" class="toggleNav">三 Menu</a>
+			<ul>
+				<li><a href="#">item 1</a></li>
+				<li><a href="#">item 2</a></li>
+				<li><a href="#">item 3</a></li>
+				<li><a href="#">item 4</a></li>
+				<li><a href="#">item 5</a></li>
+				<li><a href="#">item 6</a></li>
+				<li class="social">
+					<a href="http://twitter.com">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</li>
+				<li class="social">
+					<a href="http://facebook.com">
+						<i class="fa fa-facebook"></i>
+					</a>
+				</li>
+				<li class="social">
+					<a href="http://github.com">
+						<i class="fa fa-github"></i>
+					</a>
+				</li>
+				<li class="social">
+					<a href="http://www.baidu.com">
+						<i class="fa fa-photo"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<section class="hero">
+			<img src="http://lorempixel.com/1000/600/abstract">
+		</section>
+
+		<section class="details">
+			<p>A simple video course to help you master FlexBox.</p>
+			<p>Sign up today to grab all the videos and exercises!</p>
+		</section>
+
+		<section class="signup">
+			<form action="#" class="signup">
+				<input type="text" placeholder="Your Name">
+				<input type="email" placeholder="Email Address">
+				<input type="submit" value="Sign me up!">
+			</form>
+		</section>
+
+		<footer>
+			<p>&copy; Zero to One</p>
+		</footer>
+	</div>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+
+	<script>
+    $(function() {
+      $('.toggleNav').on('click',function() {
+        $('.flex-nav ul').toggleClass('open');
+      });
+    });
+
+  </script>
+</body>
+</html>
