@@ -69,3 +69,16 @@ just do it
       z-index:-1;
   }
 ```
+
+
+### 超出文字不换行，省略显示
+```css
+.title { 
+    width:给宽;
+    white-space: nowrap; /* 强制不换行 */
+    overflow: hidden; /* 超出部分隐藏 */
+    text-overflow: ellipsis; /* 超出部分省略 */
+      -o-text-overflow: ellipsis;
+      -ms-text-overflow: ellipsis;
+  } 
+```
