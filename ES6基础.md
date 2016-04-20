@@ -11,21 +11,21 @@
   3 const的作用域与let命令相同：只在声明所在的块级作用域内有效。
   4 const命令声明的常量也是不提升，同样存在暂时性死区，只能在声明的位置后面使用。
   5 const声明的常量，也与let一样不可重复声明。
-  (
+
     对于复合类型的变量，变量名不指向数据，而是指向数据所在的地址。const命令只是保证变量名指向的地址不变，并不保证该地址的数据不变，
     所以将一个对象声明为常量必须非常小心。
     ```javascript
-const foo = {};
-foo.prop = 123;
-
-foo.prop
-// 123
-
-foo = {} // TypeError: "foo" is read-only
-```
+      const foo = {};
+      foo.prop = 123;
+      
+      foo.prop
+      // 123
+      
+      foo = {} // TypeError: "foo" is read-only
+    ```
 上面代码中，常量foo储存的是一个地址，这个地址指向一个对象。不可变的只是这个地址，即不能把foo指向另一个地址，但对象本身是可变的，
 所以依然可以为其添加新属性。
-  )
+  
   ES6除了添加let和const命令，另外两种声明变量的方法：import命令和class命令。所以，ES6一共有6种声明变量的方法。
   如：
   ```javascript
