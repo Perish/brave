@@ -95,3 +95,22 @@ window.b // undefined
       are on sale!
     `);
  ```
+# ES6提供了二进制和八进制数值的新的写法，分别用前缀0b（或0B）和0o（或0O）
+### ES6在Number对象上，新提供了Number.isFinite()和Number.isNaN()两个方法，用来检查Infinite和NaN这两个特殊值。
+### Number.isFinite()用来检查一个数值是否非无穷（infinity）。
+### Number.isNaN()用来检查一个值是否为NaN。
+### ES6将全局方法parseInt()和parseFloat()，移植到Number对象上面，行为完全保持不变。
+###### Number.isInteger()用来判断一个值是否为整数。需要注意的是，在JavaScript内部，整数和浮点数是同样的储存方法，所以3和3.0被视为同一个值。
+### Number.isSafeInteger()则是用来判断一个整数是否落在这个范围之内。
+### Math.trunc方法用于去除一个数的小数部分，返回整数部分。
+### Math.sign方法用来判断一个数到底是正数、负数、还是零。
+   它会返回五种值。
+    参数为正数，返回+1；
+    参数为负数，返回-1；
+    参数为0，返回0；
+    参数为-0，返回-0;
+    其他值，返回NaN。
+### Math.cbrt方法用于计算一个数的立方根。
+### Math.imul方法返回两个数以32位带符号整数形式相乘的结果，返回的也是一个32位的带符号整数。
+### Math.fround方法返回一个数的单精度浮点数形式。
+### Math.hypot方法返回所有参数的平方和的平方根。
