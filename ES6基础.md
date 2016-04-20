@@ -1,3 +1,4 @@
+摘自 [【阮一峰】](http://es6.ruanyifeng.com/)
 ### let 和 const
   1 let 所声明的变量，只在let命令所在的代码块内有效。(for循环的计数器，就很合适使用let命令)
   2 let不像var那样会发生“变量提升”现象。所以，变量一定要在声明后使用，否则报错。
@@ -56,3 +57,41 @@ let b = 1;
 window.b // undefined
 ```
 上面代码中，全局变量a由var命令声明，所以它是全局对象的属性；全局变量b由let命令声明，所以它不是全局对象的属性，返回undefined。
+
+
+# 传统上，JavaScript只有indexOf方法，可以用来确定一个字符串是否包含在另一个字符串中。ES6又提供了三种新方法。
+
+  includes()：返回布尔值，表示是否找到了参数字符串。
+  startsWith()：返回布尔值，表示参数字符串是否在源字符串的头部。
+  endsWith()：返回布尔值，表示参数字符串是否在源字符串的尾部。
+
+# repeat方法返回一个新字符串，表示将原字符串重复n次。
+
+# ES7推出了字符串补全长度的功能。如果某个字符串不够指定长度，会在头部或尾部补全。padStart用于头部补全，padEnd用于尾部补全。
+  ``` javascript
+    'x'.padStart(5, 'ab') // 'ababx'
+    'x'.padStart(4, 'ab') // 'abax'
+    
+    'x'.padEnd(5, 'ab') // 'xabab'
+    'x'.padEnd(4, 'ab') // 'xaba'
+    
+    'xxx'.padStart(2, 'ab') // 'xxx'
+    'xxx'.padEnd(2, 'ab') // 'xxx'
+    
+    'abc'.padStart(10, '0123456789')
+      // '0123456abc'
+      
+    'x'.padStart(4) // '   x'
+    'x'.padEnd(4) // 'x   '
+  ```
+
+# 模板字符串 `
+ 它可以当作普通字符串使用，也可以用来定义多行字符串，或者在字符串中嵌入变量。
+ 变量名写在${}之中
+  ```javascript
+    $("#result").append(`
+      There are <b>${basket.count}</b> items
+       in your basket, <em>${basket.onSale}</em>
+      are on sale!
+    `);
+ ```
